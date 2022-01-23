@@ -74,6 +74,7 @@
     <string name="info_text1">I have a great passion for baking.</string>
     <string name="info_text2"> For this I wanted an app, </string>
     <string name="info_text3">in which I can save my favorite recipes </string>
-    <string name="info_text4">and save the corresponding ingredients in a list for shopping.</string>
+    <string name="info_text4">and save the corresponding ingredients</string>
+    <string name="info_text5">in a list for shopping.</string>
     <string name="info_icon">Info</string>
 </resources>

@@ -41,6 +41,6 @@ class LoadScreenActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val LOAD_SCREEN_TIME_OUT: Long = 2000 // = 2 sec
+        private const val LOAD_SCREEN_TIME_OUT: Long = 8000 // = 8 sec
     }
 }
