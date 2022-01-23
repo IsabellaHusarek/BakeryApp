@@ -60,17 +60,6 @@ class SingleRecipeActivity : AppCompatActivity() {
     private lateinit var idFromMainPage: String
     private lateinit var ingredientsClass: IngredientsClass
 
-    // declare variables from layout
-    /*private lateinit var nameDish: TextView
-    private lateinit var portionDish: EditText
-    private lateinit var preparationTime: TextView
-    private lateinit var instructionsDish: TextView
-    private lateinit var ratingStars: RatingBar
-    private lateinit var sourceRecipe: TextView
-    private lateinit var preparationTimeNumber: TextView
-    private lateinit var imageDish: ImageView
-    private lateinit var singleRecipeScroll: ScrollView
-    private lateinit var singleRecipeToolbar: Toolbar*/
 
     private lateinit var binding: ActivitySingleRecipeBinding
 

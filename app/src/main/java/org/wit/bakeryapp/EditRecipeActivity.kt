@@ -156,7 +156,7 @@ class EditRecipeActivity : AppCompatActivity() {
             } else {
                 Snackbar.make(
                     findViewById(R.id.edit_recipe_scrollview),
-                    "Titel darf nicht leer sein", Snackbar.LENGTH_SHORT
+                    "Title cannot be empty", Snackbar.LENGTH_SHORT
                 )
                     .show()
             }

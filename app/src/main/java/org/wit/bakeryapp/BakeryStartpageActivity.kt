@@ -84,7 +84,7 @@ class BakeryStartpageActivity : AppCompatActivity() {
             }
             R.id.navigation_info -> {
                 selectedFragment = InfoFragment()
-                supportActionBar?.title = "Maps"
+                supportActionBar?.title = "Info"
             }
 
             R.id.navigation_shoppingcart -> {

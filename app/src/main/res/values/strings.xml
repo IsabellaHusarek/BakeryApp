@@ -5,7 +5,7 @@
     <string name="load_screen_credits">by Isabella Husarek</string>
 
     <string name="recipes_icon">Recipes</string>
-    <string name="maps_icon">Maps</string>
+    <string name="maps_icon">Info</string>
     <string name="shopping_icon">Shopping</string>
 
     <!-- App Setup -->
@@ -16,7 +16,7 @@
 
     <!-- BottomNavBar Site Names -->
     <string name="title_recipelist">Recipelist</string>
-    <string name="title_planer">Maps</string>
+    <string name="title_planer">Info</string>
     <string name="title_shoppingcart">Shopping</string>
 
     <!-- ActionBar Button Names-->
@@ -70,6 +70,10 @@
     <string name="button_delete_image">Delete image</string>
 
     <string name="info_information">Information about the app</string>
-    <string name="info_text">Here are some information about the app</string>
+    <string name="info_text">This app was created by Isabella Husarek.</string>
+    <string name="info_text1">I have a great passion for baking.</string>
+    <string name="info_text2"> For this I wanted an app, </string>
+    <string name="info_text3">in which I can save my favorite recipes </string>
+    <string name="info_text4">and save the corresponding ingredients in a list for shopping.</string>
     <string name="info_icon">Info</string>
 </resources>
