@@ -29,6 +29,13 @@ You can tick them if you buy them or delete them or delete the whole list.
 I m happy how it comes out, even if it isnt as good as i wanted it to be because i have to do my bachelorsdegree until the 21.01 and i was a little stressed.
 But I m looking forward to add the missing features in the future.
 
-So thanks for this nice course!
+Yeah and sorry for my bad English I hope you can understand what i was trying to say. I also was very nervous while recording so yeah it sounds a little bumpy...
+I also forgot to make this app in English and changed it later on, but i saw that i have missed to rename two things...
+Github is also new for me so I hope you dont mind that i loaded up then i was almost ready. but i get used to it now.
+
+So thanks for this nice course, I ve learned a lot!
+
+Greetings,
+Isabella
 
 
