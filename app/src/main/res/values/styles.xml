@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackgroundLight</item>
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- Window Transitions -->
+        <item name="android:windowAnimationStyle">@style/ActivitySwitchAnimation</item>
+        <item name="materialAlertDialogTheme">@style/customDialogStyle</item>
+    </style>
+
+    <style name="ActivitySwitchAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="customDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:windowAnimationStyle">@style/customDialogAnimation</item>
+    </style>
+
+    <style name="customDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

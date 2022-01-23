@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">BakeryApp</string>
+
+    <string name="load_screen_logo">Load Screen</string>
+    <string name="load_screen_credits">by Isabella Husarek</string>
+
+    <string name="recipes_icon">Recipes</string>
+    <string name="maps_icon">Maps</string>
+    <string name="shopping_icon">Shopping</string>
+
+    <!-- App Setup -->
+    <string name="app_name_coogit">Coogit</string>
+
+    <string name="description_splash_screen_logo">Load Screen</string>
+    <string name="text_splash_screen_credits">Designed by Isabella</string>
+
+    <!-- BottomNavBar Site Names -->
+    <string name="title_recipelist">Recipelist</string>
+    <string name="title_planer">Maps</string>
+    <string name="title_shoppingcart">Shopping</string>
+
+    <!-- ActionBar Button Names-->
+    <string name="button_ab_plan_recipe">Plan recipe</string>
+    <string name="button_ab_filter_recipes">Filter recipe</string>
+    <string name="button_ab_search_for_recipe">Search recipe</string>
+    <string name="button_ab_add_recipe_to_shopping_list">Add recipe</string>
+    <string name="button_ab_delete_ingredients_from_shopping_list">Delete ingredients</string>
+    <string name="button_ab_add_photo">Add image</string>
+    <string name="button_ab_add_to_shopping_list">Add to shopping list</string>
+    <string name="button_ab_delete_recipe">Delete Recipe</string>
+    <string name="button_ab_add_to_planner">Zu Planer hinzufügen</string>
+    <string name="button_ab_edit_recipe">Edit Recipe</string>
+    <string name="button_ab_recipe_of_the_day">Recipe of the day</string>
+
+    <!-- Items -->
+    <string name="title_recipe_image">Recipe Image</string>
+    <string name="title_edit_recipe">Edit Recipe</string>
+    <string name="title_import_recipe">Import Recipe</string>
+    <string name="title_new_recipe">New Recipe</string>
+    <string name="title_dialog_add_recipe">Add Recipe</string>
+    <string name="title_dialog_delete_ingredients">Delete all ingredients?</string>
+    <string name="title_dialog_filter_recipes">Filter Recipes…</string>
+
+    <string name="info_import_recipe">Import a recipe from the internet by pasting the address of a compatible website.</string>
+    <string name="hint_input_recipe_url">Add link to recipe</string>
+    <string name="hint_shopping_cart_new_ingredient">Add new ingredient</string>
+
+    <string name="label_title">Titel</string>
+    <string name="label_preparation_time_min">Preparationtime (min)</string>
+    <string name="label_preparation_time">Preparationtime</string>
+    <string name="label_portion">Portion(s)</string>
+    <string name="label_ingredients">Ingredients</string>
+    <string name="label_preparation_directions">Preparation</string>
+    <string name="label_source">Source</string>
+    <string name="label_dialog_accept">Accept</string>
+    <string name="label_dialog_cancel">Cancel</string>
+    <string name="label_planer_show_recipe">Show recipe</string>
+    <string name="label_planer_delete_from_plan">@string/button_ab_delete_recipe</string>
+    <string name="label_seasonality">Season</string>
+
+    <string name="button_edit_image">Edit image</string>
+    <string name="button_add_image">@string/button_ab_add_photo</string>
+    <string name="button_save">Save</string>
+    <string name="button_import">import</string>
+
+    <string name="fab_new_recipe">Floating Action Button for new Recipe</string>
+    <string name="fab_remove_filter">Remove filter</string>
+
+    <string name="icon_text_input_shopping_cart_check">Shopping Cart Text Input</string>
+    <string name="button_delete_image">Delete image</string>
+
+    <string name="info_information">Information about the app</string>
+    <string name="info_text">Here are some information about the app</string>
+    <string name="info_icon">Info</string>
+</resources>

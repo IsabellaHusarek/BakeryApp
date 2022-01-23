@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImportRecipeActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tb_import_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="12dp"
+        app:title="@string/title_import_recipe"
+        app:titleTextColor="@color/colorWhite"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary" />
+
+    <TextView
+        android:id="@+id/tv_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/info_import_recipe" />
+
+    <EditText
+        android:id="@+id/input_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/hint_input_recipe_url"
+        android:inputType="textUri"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/button_import"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.ShoppingFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/shopping_cart_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:hint="@string/hint_shopping_cart_new_ingredient"
+        app:endIconContentDescription="@string/icon_text_input_shopping_cart_check"
+        app:endIconDrawable="@drawable/ic_text_input_check"
+        app:endIconMode="custom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shopping_cart_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopping_cart_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shopping_cart_text_input_layout"
+        android:layout_gravity="top"
+        android:scrollbars="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

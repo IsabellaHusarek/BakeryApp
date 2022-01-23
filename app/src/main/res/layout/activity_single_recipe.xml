@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".SingleRecipeActivity">
+
+    <!--Toolbar-->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/single_recipe_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:titleTextColor="@color/colorWhite"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+    <ScrollView
+        android:id="@+id/single_recipe_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/single_recipe_toolbar"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintTop_toBottomOf="@+id/single_recipe_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Picture of dish -->
+            <ImageView
+                android:id="@+id/image_dish"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/title_recipe_image"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/inner_layout"/>
+
+            <!-- Name of dish -->
+            <TextView
+                android:id="@+id/name_dish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_dish" />
+
+            <!-- Portion in editable textfield-->
+            <EditText
+                android:id="@+id/portion_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:autofillHints="z.B: 1.5"
+                android:background="@drawable/divider_rectangle_outline"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/attributes_dish"
+                app:layout_constraintTop_toBottomOf="@id/name_dish"
+                tools:ignore="LabelFor" />
+
+            <!-- Textfield "Portion(en)" -->
+            <TextView
+                android:id="@+id/attributes_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:text="@string/label_portion"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_dish" />
+
+            <!-- Rating Bar Stars 1 to 5 -->
+            <RatingBar
+                android:id="@+id/rating_stars"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/colorPrimaryDark"
+                android:rating="0"
+                android:stepSize="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/attributes_dish"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <!-- Textfield "Zutaten" -->
+            <TextView
+                android:id="@+id/ingredients_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:text="@string/label_ingredients"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/portion_dish" />
+
+            <!--Recyclerview list for ingredients -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                android:background="@color/colorBackgroundLight"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ingredients_dish" />
+
+            <!--textfield "Zubereitung"-->
+            <TextView
+                android:id="@+id/preparation_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:text="@string/label_preparation_directions"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+
+            <!-- preparation time-->
+            <TextView
+                android:id="@+id/_preparation_time_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:text="@string/label_preparation_time"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@id/preperation_time_number"
+                app:layout_constraintTop_toBottomOf="@id/portion_dish" />
+
+            <!-- >Textfield "Zubereitrungszeit"-->
+            <TextView
+                android:id="@+id/preperation_time_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/portion_dish" />
+
+            <!-- Preparation information -->
+            <TextView
+                android:id="@+id/instructions_dish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/preparation_dish" />
+
+            <!-- Source of imported recipe -->
+            <TextView
+                android:id="@+id/source_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:autoLink="all"
+                android:linksClickable="true"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/instructions_dish" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

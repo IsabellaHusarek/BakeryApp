@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- item for edit -->
+    <item android:id="@+id/edit"
+        android:title="@string/button_ab_edit_recipe"
+        android:icon="@drawable/ab_edit"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!--item for add a photo with camera -->
+    <item android:id="@+id/add_photo"
+        android:title="@string/button_ab_add_photo"
+        android:icon="@drawable/ab_add_photo"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!--item for shopping list -->
+    <item android:id="@+id/add_to_list"
+        android:title="@string/button_ab_add_to_shopping_list"
+        android:visible="true"
+        app:showAsAction="never" >
+    </item>
+
+    <!--item for meal planner -->
+    <item android:id="@+id/add_to_planner"
+        android:title="@string/button_ab_add_to_planner"
+        app:showAsAction="never" >
+    </item>
+
+    <!--item for delete -->
+    <item android:id="@+id/delete_recipe"
+        android:title="@string/button_ab_delete_recipe"
+        app:showAsAction="never">
+    </item>
+
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/recipe_list_action_bar_menu">
+        <item
+            android:id="@+id/search_for_recipe"
+            android:icon="@drawable/ab_search"
+            android:title="@string/button_ab_search_for_recipe"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="always|collapseActionView" />
+
+        <item
+            android:id="@+id/show_recipe_of_the_day"
+            android:icon="@drawable/ab_recipe_of_the_day_summer"
+            android:title="@string/button_ab_recipe_of_the_day"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/filter_recipes"
+            android:icon="@drawable/ab_filter_recipes"
+            android:title="@string/button_ab_filter_recipes"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group android:id="@+id/planer_action_bar_menu">
+        <item
+            android:id="@+id/plan_recipe"
+            android:icon="@drawable/ab_add"
+            android:title="@string/button_ab_plan_recipe"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group android:id="@+id/shopping_cart_action_bar_menu">
+        <item
+            android:id="@+id/add_recipe_to_shopping_list"
+            android:icon="@drawable/ab_add_recipe"
+            android:title="@string/button_ab_add_recipe_to_shopping_list"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/remove_all_ingredients_from_shopping_list"
+            android:icon="@drawable/ab_delete"
+            android:title="@string/button_ab_delete_ingredients_from_shopping_list"
+            app:showAsAction="ifRoom" />
+    </group>
+
+</menu>

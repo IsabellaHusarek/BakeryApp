@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoadScreenActivity">
+
+    <ImageView
+        android:id="@+id/load_screen_logo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:contentDescription="@string/load_screen_logo"
+        android:src="@mipmap/ic_launcher"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/load_screen_app_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorSecondary"
+        android:layout_below="@id/load_screen_logo_image_view"
+        android:padding="30dp"/>
+
+    <ProgressBar
+        android:id="@+id/load_screen_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load_screen_app_name_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="96dp"
+        android:indeterminateTint="@color/colorSecondary"
+        android:progress="0"
+        android:max="200"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/load_screen_credits"
+        android:textColor="@color/colorSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- item for save -->
+    <item android:id="@+id/ab_save"
+        android:title="@string/button_save"
+        android:icon="@drawable/ab_save"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>
